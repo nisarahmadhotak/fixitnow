@@ -1,0 +1,33 @@
+.header {
+  height: 95vh;
+  background-image: linear-gradient(to right bottom, #012623d2, #012e40c2),
+    url("https://images.unsplash.com/photo-1505798577917-a65157d3320a?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1500&q=80");
+  background-size: cover;
+  position: relative;
+  background-position: top;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+
+  margin-bottom: 1rem;
+
+  @include respond(phone) {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
+  }
+  &-logo-box {
+    position: absolute;
+    top: 40px;
+    left: 40px;
+  }
+  &-logo {
+    height: 35px;
+  }
+
+  &-text-box {
+    position: absolute;
+    left: 52%;
+    top: 40%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+}

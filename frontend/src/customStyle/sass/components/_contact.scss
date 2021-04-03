@@ -1,0 +1,71 @@
+.contact {
+  position: relative;
+  min-height: 100vh;
+  // padding: 50px 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.contact .content {
+  max-width: 800px;
+  text-align: center;
+}
+.contact .content h2 {
+  font-size: 36px;
+  font-weight: 500;
+}
+.contact .content p {
+  font-weight: 300;
+}
+.containers {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+.containers .contactInfo {
+  display: flex;
+  width: 50%;
+  flex-direction: column;
+}
+.containers .contactInfo .box {
+  position: relative;
+  padding: 20px 0;
+  display: flex;
+}
+.containers .contactInfo .box .icon {
+  min-width: 60px;
+  height: 60px;
+  background: #6dab98;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  font-size: 22px;
+}
+.containers .contactInfo .box .text {
+  display: flex;
+  margin-left: 20px;
+  font-size: 16px;
+  flex-direction: column;
+}
+
+@include respond(tab-land) {
+  .contact {
+    padding: 50px;
+  }
+  .containers {
+    flex-direction: column;
+  }
+}
+
+@include respond(tab-port) {
+  .contact {
+    padding: 50px;
+  }
+  .containers {
+    flex-direction: column;
+  }
+}

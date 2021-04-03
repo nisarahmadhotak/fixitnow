@@ -1,0 +1,65 @@
+.fileUpload {
+  display: none;
+}
+.fileUploadLabel {
+  color: white;
+  height: 3rem;
+  width: 11rem;
+  background-color: #ffb900;
+  position: absolute;
+  font-size: 1.2rem;
+  font-weight: 500;
+  font-family: $font-family-1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 3rem;
+  transition: 0.4s all;
+  margin-top: 1rem;
+  @include respond(tab-port) {
+    height: 2.5rem;
+    width: 9rem;
+  }
+}
+.fileUploadButton {
+  color: white;
+  height: 3rem;
+  width: 11rem;
+  background-color: #345148;
+  position: relative;
+  margin-left: 12rem;
+  margin-top: 1rem;
+  font-size: 1.4rem;
+  font-family: $font-family-1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 2rem;
+  transition: 0.4s all;
+  // @include respond(tab-land) {
+  //   height: 1.3rem;
+  //   width: 6rem;
+  //   margin-left: 10rem;
+  // }
+  @include respond(tab-port) {
+    height: 2.5rem;
+    width: 9rem;
+    margin-left: 10rem;
+  }
+}
+.fileUploadLabel:hover {
+  transform: scale(1.12);
+}
+.fileUploadButton:hover {
+  transform: scale(1.12);
+}
+.fileUploadImage {
+  height: 14rem;
+  width: 14rem;
+  -webkit-clip-path: circle(50% at 50% 50%);
+  clip-path: circle(50% at 50% 50%);
+  @include respond(tab-port) {
+    height: 9rem;
+    width: 9rem;
+  }
+}

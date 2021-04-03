@@ -1,0 +1,107 @@
+.header-primary {
+  color: #fff;
+  text-transform: uppercase;
+  backface-visibility: hidden;
+  margin-bottom: 5rem;
+  &-main {
+    display: block;
+    font-size: 5rem;
+    font-weight: 400;
+    letter-spacing: 4.5rem;
+    animation: moveInLeft;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+
+    @include respond(phone) {
+      //width < 600?
+      letter-spacing: 1.5rem;
+      font-size: 4rem;
+    }
+  }
+  &-sub {
+    display: block;
+    text-align: left;
+    font-size: 2rem;
+    font-weight: 400;
+    margin-top: 2.3rem;
+    letter-spacing: 1.13rem;
+    animation: moveInRight 1s ease-out;
+    // animation-iteration-count:
+    @include respond(phone) {
+      //width < 600?
+      letter-spacing: 0.6rem;
+      font-size: 1.1rem;
+    }
+  }
+}
+body {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 2.4rem;
+  line-height: 1.7;
+  color: $color-grey;
+}
+.heading-secondary {
+  font-size: 3.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  display: inline-block;
+  background-image: linear-gradient(
+    to right,
+    $color-primary-light,
+    $color-primary-dark
+  );
+  -webkit-background-clip: text;
+  color: transparent;
+  letter-spacing: 2px;
+  transition: all 0.2s;
+
+  @include respond(tab-port) {
+    //width < 600?
+    font-size: 3rem;
+  }
+  @include respond(phone) {
+    //width < 600?
+    font-size: 2.5rem;
+  }
+  &:hover {
+    transform: skewY(2deg) skewX(15deg) scale(1.1);
+    text-shadow: 0.5rem 1rem 2rem rgba($color-black, 0.2); // x y blur
+  }
+}
+.header-tertiary {
+  font-size: 2.2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.header-tertiary-1 {
+  font-family: $font-family-2;
+  font-size: 2rem;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.header-tertiary-2 {
+  font-family: $font-family-2;
+  font-size: 1.4rem;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.paragraph {
+  font-size: $default-font-size;
+  color: #252526;
+
+  &:not(:last-child) {
+    margin-bottom: 3rem;
+  }
+}
+.paragraph-1 {
+  font-family: $font-family-1;
+  font-size: 1.4rem;
+  margin-top: 1rem;
+  color: #252526;
+}
+.paragraph-2 {
+  font-family: $font-family-1;
+  font-size: 1.2rem;
+  color: #252526;
+}

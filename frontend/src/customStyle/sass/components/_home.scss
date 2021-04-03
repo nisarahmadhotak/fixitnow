@@ -1,0 +1,22 @@
+.img-carousel {
+  // margin-left: 5rem;
+  // margin-right: 6rem;
+  width: 100%;
+  // object-fit: cover;
+  height: 46rem !important;
+  overflow: hidden;
+}
+.carousel-container {
+  margin-top: 10rem;
+  margin-left: 5rem;
+  margin-right: 3rem;
+  border-radius: 3px;
+  box-shadow: 0 1.5rem 4rem rgba($color-black, $alpha: 0.15);
+}
+.img-owl-carousel {
+  height: 30rem;
+}
+
+.item-header {
+  margin-top: 2.5rem;
+}

@@ -1,0 +1,77 @@
+{
+  "name": "frontend",
+  "version": "0.1.0",
+  "private": true,
+  "proxy": "http://localhost:5000",
+  "dependencies": {
+    "@apollo/react-hooks": "^3.1.5",
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.5.0",
+    "@testing-library/user-event": "^7.2.1",
+    "acorn": "^7.3.1",
+    "aos": "^2.3.4",
+    "apollo-boost": "^0.4.9",
+    "apollo-client": "^2.6.10",
+    "axios": "^0.19.2",
+    "bootstrap": "^4.5.0",
+    "classnames": "^2.2.6",
+    "graphql": "^15.1.0",
+    "moment": "^2.26.0",
+    "react": "^16.13.1",
+    "react-apollo": "^3.1.5",
+    "react-bootstrap": "^1.0.1",
+    "react-dom": "^16.13.1",
+    "react-helmet": "^6.1.0",
+    "react-js-pagination": "^3.0.3",
+    "react-loadable": "^5.5.0",
+    "react-markdown": "^4.3.1",
+    "react-moment": "^0.9.7",
+    "react-owl-carousel": "^2.3.1",
+    "react-paypal-express-checkout": "^1.0.5",
+    "react-router": "^5.2.0",
+    "react-router-dom": "^5.2.0",
+    "react-script-tag": "^1.1.2",
+    "react-scripts": "^3.4.3",
+    "react-select": "^3.1.0",
+    "react-select-country-list": "^2.2.1",
+    "semver": "^7.3.2",
+    "styled-components": "^5.1.1",
+    "uikit": "^3.5.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "watch:sass": "node-sass ./src/customStyle/sass/main.scss ./src/index.css -w",
+    "compile:css": "node-sass ./src/customStyle/sass/main.scss ./src/index.comp.css",
+    "concat:css": "concat -o  ./src/index.concat.css ./src/index.comp.css",
+    "prefix:css": "postcss --use autoprefixer -b 'last 10 versions' ./src/index.comp.css -o ./src/index.prefix.css",
+    "compress:css": "node-sass ./src/index.prefix.css ./src/index.css --output-style compressed",
+    "build:css": "npm-run-all compile:css concat:css prefix:css compress:css"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "autoprefixer": "^9.8.4",
+    "concat": "^1.0.3",
+    "css-loader": "^3.6.0",
+    "node-sass": "^4.14.1",
+    "npm-run-all": "^4.1.5",
+    "postcss-cli": "^7.1.1",
+    "style-loader": "^1.2.1"
+  }
+}

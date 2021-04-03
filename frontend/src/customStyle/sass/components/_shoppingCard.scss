@@ -1,0 +1,181 @@
+.containerss {
+  position: relative;
+}
+.containerss .card {
+  position: relative;
+  width: 29rem;
+  height: 34rem;
+  background: #011d1f;
+  border-radius: 20px;
+  overflow: hidden;
+  @include respond(tab-land) {
+    width: 37rem;
+    height: 42rem;
+  }
+  @include respond(tab-port) {
+    width: 34rem;
+    height: 36rem;
+  }
+  @include respond(phone) {
+    width: 37rem;
+    height: 38rem;
+  }
+}
+
+.containerss .card::after {
+  content: "FixItNow.com";
+  position: absolute;
+  top: 85%;
+  letter-spacing: 3px;
+  font-size: 3.7rem;
+  font-weight: 700;
+  font-family: $font-family-2;
+  font-style: italic;
+  color: rgba(255, 255, 255, 0.04);
+  @include respond(tab-land) {
+    height: 36rem;
+  }
+}
+
+.containerss .card:hover .imgBx {
+  transform: scale(1.3);
+}
+
+.containerss .card .imgBx {
+  transition: all 1s ease;
+}
+.containerss .card .imgBx .img {
+  height: 30rem;
+  @include respond(tab-land) {
+    height: 36rem;
+  }
+  @include respond(tab-port) {
+    height: 32rem;
+  }
+}
+
+.containerss .card .contentBx {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 9rem;
+  text-align: center;
+  transition: all 1s ease;
+}
+
+.containerss .card:hover .contentBx {
+  height: 19rem;
+  z-index: 9000;
+  @include respond(tab-land) {
+    height: 15rem;
+  }
+}
+
+.title {
+  position: relative;
+  font-weight: 600;
+  font-size: 3rem;
+  font-family: $font-family-1;
+  letter-spacing: 1px;
+  text-decoration: none;
+  color: #000000;
+}
+
+.containerss .card .contentBx .price h3 {
+  color: #000;
+  font-weight: 600;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-right: 0.6rem;
+  opacity: 0;
+  visibility: hidden;
+}
+.containerss .card:hover .contentBx .price h3 {
+  opacity: 1;
+  visibility: visible;
+  transition-delay: 0.5s;
+}
+.containerss .card .contentBx .price span {
+  color: #000;
+  font-weight: 600;
+  font-size: 2.5rem;
+}
+.containerss .card .contentBx .add {
+  display: inline-block;
+  padding: 0.9rem 1.7rem;
+  border-radius: 7px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.7rem;
+  z-index: 100000;
+  color: #000;
+  opacity: 0;
+  transform: translateY(4rem);
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+.containerss .card:hover .contentBx .add {
+  opacity: 1;
+  transform: translateY(0px);
+  transition-delay: 0.2s;
+}
+
+.css-grid {
+  position: relative;
+  width: 100%;
+  margin: 30px auto;
+  display: grid;
+  grid-template-columns: 10% repeat(auto-fit, minmax(300px, 1fr));
+  // grid-template-rows: 1fr repeat(2, 1fr);
+  grid-gap: 20px;
+  @include respond(tab-land) {
+    grid-template-columns: 20% repeat(2, 36%);
+  }
+  @include respond(tab-port) {
+    grid-template-columns: 25% repeat(2, 40%);
+    grid-gap: 10px;
+  }
+  @include respond(phone) {
+    grid-template-columns: 30% repeat(1, 80%);
+  }
+}
+.sidebar {
+  // border: 2px solid #01260e;
+  // border-radius: 5px;
+  grid-row: 1 / span 3;
+  grid-column: 1 / 1;
+
+  @include respond(tab-land) {
+    grid-row: 1 / span 4;
+  }
+  @include respond(tab-port) {
+    grid-row: 1 / span 7;
+  }
+}
+.form_groups {
+  grid-column: 2 / span 3;
+  @include respond(tab-land) {
+    grid-column: 2 / span 2;
+  }
+  @include respond(tab-port) {
+    grid-column: 2 / span 2;
+  }
+  @include respond(phone) {
+    grid-column: 2 / span 1;
+  }
+}
+
+// .list-itemss {
+//   background: var(--sky);
+//   padding: 0.01rem 0.3rem;
+//   margin: 0.4rem 0;
+//   font-size: 1.7rem;
+//   border-radius: 3rem;
+//   text-align: center;
+//   transition: all 0.4s ease-in-out;
+// }
+// .category-list .list-itemss:hover {
+//   transform: scale(1.2);
+// }

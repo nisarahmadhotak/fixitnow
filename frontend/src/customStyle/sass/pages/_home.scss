@@ -1,0 +1,166 @@
+.section-about {
+  background-color: $color-grey-light-1;
+  padding: 25rem 0;
+  margin-top: -20vh;
+  @include respond(tab-port) {
+    padding: 20rem 0;
+  }
+}
+.section-feature {
+  padding: 20rem 0;
+  background-image: linear-gradient(to right bottom, #012623d2, #012e40c2),
+    url("https://cdn.pixabay.com/photo/2017/06/15/11/42/ring-2405145_960_720.jpg");
+  background-size: cover;
+  transform: skewY(-7deg);
+  margin-top: -10rem;
+  & > * {
+    //select direct children of this class
+
+    transform: skewY(7deg);
+  }
+  @include respond(tab-port) {
+    padding: 10rem 0;
+  }
+}
+
+.section-tours {
+  background-color: $color-grey-light-1;
+  padding: 25rem 0 15rem 0;
+
+  @include respond(tab-port) {
+    padding: 20rem 0 10rem 0;
+  }
+}
+
+.section-stories {
+  position: relative;
+  padding: 1rem 0;
+
+  @include respond(tab-port) {
+    padding: 2rem 0;
+  }
+}
+
+.section-book {
+  // padding: 2rem 0;
+  // background-image: linear-gradient(
+  //   to right bottom,
+  //   $color-grey-light-1,
+  //   $color-grey-light-2
+  // );
+}
+.book {
+  background-image: linear-gradient(
+    to right,
+    rgba($color-white, 0.9) 0%,
+    rgba($color-white, 0.95) 100%
+  );
+  background-size: 100%;
+  border-radius: 3px;
+  box-shadow: 0 1.5rem 4rem rgba($color-black, 0.15);
+
+  @include respond(tab-land) {
+    background-size: cover;
+
+    background-image: linear-gradient(
+      105deg,
+      rgba($color-white, 0.9) 0%,
+      rgba($color-white, 0.9) 65%,
+      transparent 65%
+    );
+  }
+
+  @include respond(tab-port) {
+    background-image: linear-gradient(
+      to right,
+      rgba($color-white, 0.9) 0%,
+      rgba($color-white, 0.9) 100%
+    );
+  }
+
+  &_form {
+    width: 50%;
+    padding: 1rem;
+    position: relative;
+    top: 50%;
+    left: 20%;
+
+    @include respond(tab-land) {
+      width: 65%;
+    }
+
+    @include respond(tab-port) {
+      width: 100%;
+    }
+  }
+  &_form_contact {
+    width: 100%;
+    padding: 6rem;
+
+    @include respond(tab-land) {
+      width: 100%;
+    }
+
+    @include respond(tab-port) {
+      width: 100%;
+    }
+  }
+}
+
+.bookComment {
+  background-image: linear-gradient(
+    to right,
+    rgba($color-white, 0.9) 0%,
+    rgba($color-white, 0.95) 100%
+  );
+  background-size: 100%;
+  border-radius: 3px;
+  box-shadow: 0 1.5rem 4rem rgba($color-black, 0.15);
+
+  @include respond(tab-land) {
+    background-size: cover;
+
+    background-image: linear-gradient(
+      105deg,
+      rgba($color-white, 0.9) 0%,
+      rgba($color-white, 0.9) 65%,
+      transparent 65%
+    );
+  }
+
+  @include respond(tab-port) {
+    background-image: linear-gradient(
+      to right,
+      rgba($color-white, 0.9) 0%,
+      rgba($color-white, 0.9) 100%
+    );
+  }
+
+  &_form {
+    width: 90%;
+    padding: 1rem;
+    position: relative;
+    top: 50%;
+    left: 20%;
+
+    @include respond(tab-land) {
+      width: 65%;
+    }
+
+    @include respond(tab-port) {
+      width: 100%;
+    }
+  }
+  &_form_contact {
+    width: 100%;
+    padding: 6rem;
+
+    @include respond(tab-land) {
+      width: 100%;
+    }
+
+    @include respond(tab-port) {
+      width: 100%;
+    }
+  }
+}
