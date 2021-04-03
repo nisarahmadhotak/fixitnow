@@ -137,7 +137,7 @@ export default class AuthenticationProvider extends Component {
       };
       let res = await axios({
         method: "post",
-        url: `${API_URL}/auth/local`,
+        url: `api/auth/local`,
         data: data
       });
 
